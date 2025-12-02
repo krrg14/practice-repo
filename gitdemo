@@ -27,4 +27,5 @@ git clone <url> <folder name>
 git remote remove main
 git ls-files
 git rm <file n>
-
+git commit -am "new update"
+git add file.txt && git commit -m "new add up"
