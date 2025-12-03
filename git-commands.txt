@@ -8,6 +8,7 @@ git branch <name of branch>
 git branch 
 git branch checkout/switch <branch name>
 git branch -M main
+git branch -r
 git branch -d <branch name>  --# for delete branch
 git remote
 git remote -v
