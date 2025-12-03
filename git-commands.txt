@@ -4,6 +4,7 @@ git status
 git commit -m "frist commit"
 git log 
 git log -p
+git log --oneline
 git branch <name of branch>
 git branch 
 git branch checkout/switch <branch name>
