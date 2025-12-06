@@ -1,1 +1,1 @@
-﻿# practice-repo
+its a simple static page
