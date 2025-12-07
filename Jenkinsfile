@@ -6,11 +6,11 @@ pipeline{
                     checkout scm
                 }
             }
-            steps('build') {
+            stage('build') {
                 sh 'echo "build step(if needed) done"'
             }
         }
-        stage ('deploy') {
+        stage('deploy') {
             steps {
                 withAWS(region: 'ap-south-1', credentials: '084402e5-9f28-4447-baac-33f48dd3704a') {
                     sh 'ls-la'
