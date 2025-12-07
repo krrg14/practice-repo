@@ -13,8 +13,6 @@ pipeline{
             }
             stage('build'){
                 steps{
-                    sh  'npm install'
-                    sh 'npm run build'
                     sh 'echo "build step(if needed) done"'
                 }
             }
