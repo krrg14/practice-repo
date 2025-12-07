@@ -1,15 +1,13 @@
 pipeline{
     agent any
     stages {
-        stage('build') {
-            steps {
-                sh 'ls'
-                sh 'npm install'
-                sh 'echo N | ng analytics off'
-                sh 'ng build'
-                sh 'ls'
-                sh 'cd dist && ls'
-                sh 'cd dist/demo-jenkins-pro && ls'
+        stage('checkout') {
+                steps{
+                    checkout scm
+                }
+            }
+            steps('build') {
+                sh 'echo "build step(if needed) done"'
             }
         }
         stage ('deploy') {
@@ -22,7 +20,7 @@ pipeline{
         }
     }
 }
-}
+
 
 
 
