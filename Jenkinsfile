@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    envirnment{
+    environment{
         AWS_REGION='ap-south-1'
         S3_BUCKET='demo-jenkins-pro'
             }
@@ -35,7 +35,7 @@ pipeline{
             }
     }
     post{
-        sucess{
+        success{
             echo "deployed successfully to ${env.S3_BUCKET}."
         }
         failure{
