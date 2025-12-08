@@ -1,24 +1,21 @@
-pipeline {
+pipeline{
     agent any
-        stages{
-            stage('test'){
+    stages {
+        stage('checkout') {
                 steps{
-                    echo 'testing this'
+                    checkout scm
                 }
             }
-            stage('build'){
-                steps{
-                    echo 'building this'
-                    sh '''
-                        ls -l
-                        pwd 
-                    '''
-                }
+            stage('build') {
+                steps {
+                    sh 'echo "build step(if needed) done"'
             }
-            stage('deploy'){
-                steps{
-                    echo 'deploying this'
+        }
+        stage('deploy') {
+            steps {
+                withAWS(region: 'ap-south-1', credentials: '084402e5-9f28-4447-baac-33f48dd3704a') {
                 }
             }
         }
-}
+    }
+}  
