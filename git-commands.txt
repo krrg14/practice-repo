@@ -13,6 +13,7 @@ git branch -r
 git branch -d <branch name>  --# for delete branch
 git remote
 git remote -v
+git remote set-url origin <new url>
 git remote add origin main https://github.com/krrg14/git-demo.git
 git push -u origin main
 git rm --cached <gitdemo>
