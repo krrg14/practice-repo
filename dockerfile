@@ -1,5 +1,5 @@
-FROM openjdk:17
-COPY . .
-RUN javec SimpleWebServer.java
+FROM eclipse-temurin:17-jdk-jammy
+WORKDIR /app
+COPY *.class .
 EXPOSE 8080
-ENTRYPOINT ["java", "SimpleWebServer"]
+CMD ["java", "SimpleWebServer"]

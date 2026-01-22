@@ -36,7 +36,7 @@ public class SimpleWebServer {
                             font-family: Arial, sans-serif;
                             margin: 0;
                             padding: 20px;
-                            background-color: #f0f0f0;
+                            background-color: #000000;
                             text-align: center;
                         }
                         .container {
@@ -63,7 +63,7 @@ public class SimpleWebServer {
                 </head>
                 <body>
                     <div class="container">
-                        <h1>Welcome to My Simple Java Website!</h1>
+                        <h1>Welcome to My Simple Java Website for testing purpose.</h1>
                         <p>This website is generated using <span class="highlight">Java</span> and the built-in HttpServer.</p>
                         <p>It's a basic example showing how to create a web server in Java without external dependencies.</p>
                         <p>Features:</p>
